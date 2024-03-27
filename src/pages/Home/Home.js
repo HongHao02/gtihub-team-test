@@ -1,18 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Home() {
+    const [loading, setLoading]= useState(false)
   const printEample = () => {
-    console.log("Quí Example");
+    if(loading){
+        setLoading(true)
+    }
   };
   useEffect(() => {
     printEample();
   }, []);
-  return (
-    <>
-      <h1>Tesssst</h1>
-      <h2>Quí</h2>
-    </>
-  );
+  return <div> {loading ? "Quí" : "Hảo"}</div>;
 }
 
 export default Home;
