@@ -2,12 +2,12 @@ import { useEffect } from "react";
 
 function Home() {
   const printEample = () => {
-    console.log("Example");
+    console.log("Quí Example");
   };
   useEffect(() => {
     printEample();
   }, []);
-  return <div>Home tttt</div>;
+  return <div>Quí test</div>;
 }
 
 export default Home;
