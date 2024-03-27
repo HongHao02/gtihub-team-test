@@ -7,7 +7,12 @@ function Home() {
   useEffect(() => {
     printEample();
   }, []);
-  return <div>Quí test</div>;
+  return (
+    <>
+      <h1>Tesssst</h1>
+      <h2>Quí</h2>
+    </>
+  );
 }
 
 export default Home;
